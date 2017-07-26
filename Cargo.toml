@@ -1,0 +1,19 @@
+[package]
+name = "cargo-dock"
+version = "0.1.0"
+authors = ["Victor Kotseruba <barbuzaster@gmail.com>"]
+description = "dead-simple docker build"
+repository = "https://github.com/barbuza/cargo-dock"
+license = "MIT"
+
+[package.metadata.docker]
+repo = "barbuza/cargo-dock"
+expose = 3000
+
+[dependencies]
+rustc_version = "0.2.1"
+clap = "2.25.1"
+unindent = "0.1.0"
+toml = "0.4.2"
+serde = "1.0.10"
+serde_derive = "1.0.10"
